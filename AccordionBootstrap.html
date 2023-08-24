@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertically Collapsing Accordions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .accordion-card {
+      border: none;
+      margin-bottom: 5px;
+    }
+    .accordion-header {
+      background-color: #007bff;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .accordion-header:hover {
+      background-color: #0056b3;
+    }
+    .accordion-body {
+      background-color: #f8f9fa;
+      border-top: 1px solid #dee2e6;
+      padding: 10px;
+    }
+    .accordion-icon {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div id="accordion">
+    <div class="accordion-card">
+      <div class="accordion-header" data-toggle="collapse" data-target="#collapseOne">
+        Section 1 <i class="fas fa-chevron-down accordion-icon"></i>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="accordion-body">
+          Content of Section 1 goes here.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-card">
+      <div class="accordion-header" data-toggle="collapse" data-target="#collapseTwo">
+        Section 2 <i class="fas fa-chevron-down accordion-icon"></i>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="accordion-body">
+          Content of Section 2 goes here.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-card">
+      <div class="accordion-header" data-toggle="collapse" data-target="#collapseThree">
+        Section 3 <i class="fas fa-chevron-down accordion-icon"></i>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="accordion-body">
+          Content of Section 3 goes here.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
